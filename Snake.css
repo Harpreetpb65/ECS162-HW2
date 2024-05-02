@@ -115,11 +115,14 @@ button {
     
 }
 
-/*#game-area{
-    background-image: url('Canvas_background.jpg');
-    background-size: cover; 
-    background-position: center; 
-}*/
+#game-area{
+   
+        background-image: url('Canvas_background.jpg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+    
+      
+}
 
 #score-container {
     position: absolute;

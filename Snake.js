@@ -137,8 +137,7 @@ window.onload = function () {
       updateScoreDisplay(); // Update score display to show 0
       return;
     }
-    context.fillStyle = "black";
-    context.fillRect(0, 0, board.width, board.height);
+    context.clearRect(0, 0, board.width, board.height);
     food.draw();
     snake.update();
     snake.draw();
