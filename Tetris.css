@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-image: url('Tetris_webPage_background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #bcb1b1;
+    margin-top: 20px; 
+    font-size: 50px;
+}
+
+.canvas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+canvas {
+    border: 4px solid #13bfd2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    background-image: url('Canvas_background.jpg');
+    background-size: cover; /* Ensures the image covers the entire canvas */
+    background-position: center; /* Centers the image in the canvas */
+}
+
+button {
+    width: 120px;
+    height: 50px;
+    margin: auto;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(23, 19, 19);
+    background-color: #b5b8bb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    border: 4px solid #13bfd2;
+}
+
+#playbutton {
+    width: 120px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    background-color:#b5b8bb;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 4px solid #13bfd2;
+}
+
+button:hover {
+    background-color: #91979d;
+}
+
+#playbutton:hover {
+    background-color: #91979d;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#score-panel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+    font-size: 20px;
+    color: #aa9f9f;
+    border: 4px solid #0b0b0b;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    background-color:#0a0a0b;
+}
+
+@media screen and (max-width: 768px) {
+    #game-container {
+        flex-direction: column;
+    }
+    #score-container {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+

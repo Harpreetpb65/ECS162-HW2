@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML5 Tetris</title>
+    <link rel='stylesheet' href='Tetris.css' />
+</head>
+<body>
+    <h1>Welcome to Tetris</h1>
+    <div id="score-panel">
+        <div> Your Score: <span id="score">0</span></div>
+        <div>High Score: <span id="highscore">0</span></div>
+    </div>
+    <audio id="clearsound" src="sound_pop.ogg" preload="auto"></audio>
+    <canvas width='300' height='600'></canvas>
+    <div class="button-container">
+        <button id="playbutton" onclick="playButtonClicked();">Play</button>
+        <button id="pausebutton" onclick="pauseButtonClicked();">Pause</button>
+        
+    </div>
+    <script src='Tetris.js'></script>
+    <script src='Controller.js'></script>
+    <script src='Render.js'></script>
+</body>
+</html>

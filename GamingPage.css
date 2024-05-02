@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
+}
+
+header, footer {
+    background-color: #332f2f;
+    padding: 10px 0;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.game-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adjust space between game images as needed */
+    padding-bottom: 10px;
+}
+
+.game {
+    flex: 1; /* Makes each game div take up equal space */
+    text-align: center; /* Centers the text and image within each div */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.game h2 {
+    margin-bottom: 0.5em; /* Add space between the title and the button */
+}
+.game img {
+    width: 100%;
+    max-width: 300px; /* Adjust the width as needed */
+    height: auto;
+    display: block; /* Ensures the image is a block-level element */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.game button {
+    padding: 10px 20px;
+    background-color: #add8e6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px; /* Space between the button and the image */
+    display: block; /* Ensures the button is a block-level element */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: #87ceeb;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    nav ul {
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}

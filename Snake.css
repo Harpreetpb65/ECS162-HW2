@@ -1,0 +1,149 @@
+body {
+    text-align: center;
+    background-image: url('Snake_Background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default body margin */
+    height: 100vh
+}
+
+
+
+
+h1 {
+    color: #fdfdfe; 
+    text-align: center;
+    font-size: 2em;
+    
+}
+
+
+#left-right-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#left-right-buttons button {
+    margin: 0 40px; /* Adjust the spacing around the left and right buttons */
+}
+
+
+#controls > div {
+    display: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #4ec0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#controls #left, #controls #right {
+    order: 3; /* Positions the left and right buttons after the up and down buttons */
+}
+
+#controls #up {
+    order: 1;
+}
+
+#controls #down {
+    order: 2;
+}
+
+/* You can add :hover styles for better interactivity */
+#controls button:hover {
+    background-color: #536065;
+
+}
+
+/* Add styles for difficulty buttons */
+#difficulty {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #difficulty button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #349bbb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .difficulty-btn:hover, .difficulty-btn.active {
+    background-color: #3c4f55;
+  }
+  
+  /* Start game button styling */
+  #startGame {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #62da86;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #startGame:hover {
+    background-color: #87ceeb;
+  }
+  
+  #startGame:disabled {
+    background-color: #cccccc;
+    cursor: default;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#game-container {
+    display: flex;
+    align-items: start;
+    
+}
+
+/*#game-area{
+    background-image: url('Canvas_background.jpg');
+    background-size: cover; 
+    background-position: center; 
+}*/
+
+#score-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+    font-size: 20px;
+    color: #f6f3f3;
+    border: 4px solid #0b0b0b;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    background-color:#0a0a0b;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    #game-container {
+        flex-direction: column;
+    }
+    #score-container {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
